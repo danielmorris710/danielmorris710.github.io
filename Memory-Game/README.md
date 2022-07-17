@@ -36,7 +36,7 @@ Go back and forth until all cards have been matched up.
 <br>
 <br>
 
-## Future Plans For Rock Paper Scissors 
+## Future Plans NBA Memory Game
 During this project, I realized there was so much more I wanted to do. 
 <br>
 <br>
