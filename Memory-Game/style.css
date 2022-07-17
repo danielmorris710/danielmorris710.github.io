@@ -83,7 +83,10 @@ h2{
   margin-top: 40px;
   font-size: larger;
   color: #ffffff;
-  background-color: rgb(200, 90, 11);
+  background-image: url(images/basketballrules.jpg);
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-position: center;
   border-radius: 500px;
 }
 
