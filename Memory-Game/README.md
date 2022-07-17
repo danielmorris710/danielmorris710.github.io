@@ -42,7 +42,7 @@ During this project, I realized there was so much more I wanted to do.
 <br>
 A few things I would do to improve the players experience :
 - Being able to select the first cards the previous player chose 
-- Add a more players  
+- Add more players  
 - A restart button to not have to refresh the page 
 - Solo play mode against the computer
 - Different levels
