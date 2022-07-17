@@ -5,7 +5,7 @@ NBA Memory Game is your simple memory game but with a twist. You can either flip
 <br>
 
 ## Link To Game 
-[MemoryGame](https://danielmorris710.github.io/Memory-Game/index.html)
+[MemoryGame](https://danielmorris710.github.io/Memory-Game/index.html add--al)
 
 ## Preview
 ![Begin Game](images/Screenshot1.jpg)

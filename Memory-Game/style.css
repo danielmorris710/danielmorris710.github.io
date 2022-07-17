@@ -82,13 +82,14 @@ h2{
   margin-left: 180px;
   margin-top: 40px;
   font-size: larger;
+  font-weight: 50px;
   color: #ffffff;
   background-image: url(images/basketballrules.jpg);
   background-repeat: no-repeat;
   background-size: 650px;
   background-position: center;
   border-radius: 500px;
-}
+} 
 
 #players{
   margin-top: 50px;
