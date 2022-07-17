@@ -12,7 +12,7 @@ playerOne.innerHTML = playerOneScore
 playerTwo.innerHTML = playerTwoScore
 let whosTurn = document.getElementById('turns')
  
-whosTurn.innerHTML = "Home Team's Turn "
+whosTurn.innerHTML = "Home Team's Turn"
 
 
 // flip card function
@@ -38,7 +38,7 @@ function flipCards() {
 function checkCardMatch() {
   
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework
- if(!isMatch){
+  if(!isMatch){
     counter++
   } 
 
@@ -51,7 +51,7 @@ function checkCardMatch() {
     playerTwoScore++ 
     playerTwo.innerHTML = playerTwoScore
   }
-
+  
 }
 
 // dont let them flip back if they match
