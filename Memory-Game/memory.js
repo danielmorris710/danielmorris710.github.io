@@ -3,6 +3,7 @@ let cards = document.querySelectorAll('.memory-card')
 let flippedCard = false
 let gameTable = false
 let firstCard, secondCard
+let cardsLeft = 20
 let counter = 1 
 let playerOneScore = 0
 let playerTwoScore = 0
@@ -11,6 +12,7 @@ let playerTwo = document.getElementById('player-two-score')
 playerOne.innerHTML = playerOneScore
 playerTwo.innerHTML = playerTwoScore
 let whosTurn = document.getElementById('turns')
+document.getElementById("reset").addEventListener('click',restart)
  
 whosTurn.innerHTML = "Home Team's Turn"
 
@@ -44,14 +46,24 @@ function checkCardMatch() {
 
   isMatch ? disableCards() : unflipCards()
 
-  if(counter % 2 === 1 && isMatch){
+  if (counter % 2 === 1 && isMatch){
+    cardsLeft -=2
     playerOneScore++
     playerOne.innerHTML = playerOneScore
   }else if (counter % 2 === 0 && isMatch){
+    cardsLeft -=2
     playerTwoScore++ 
     playerTwo.innerHTML = playerTwoScore
   }
   
+  if (cardsLeft === 0 && playerOneScore > playerTwoScore){
+    whosTurn.innerHTML = "Home Team Won"
+  }else if (cardsLeft === 0 && playerOneScore < playerTwoScore){
+    whosTurn.innerHTML = "Away Team Won"
+  }else if (cardsLeft === 0 && playerOneScore === playerTwoScore){
+    whosTurn.innerHTML = "Game ended in a tie"
+  }
+
 }
 
 // dont let them flip back if they match
@@ -73,7 +85,7 @@ function unflipCards() {
     resetCards()
   }, 1500)
 
-  if(counter % 2 === 1 ){
+  if (counter % 2 === 1 ){
     whosTurn.innerHTML = "Home Team's Turn "
 
   }else if (counter % 2 === 0){
@@ -107,3 +119,7 @@ function takeTurns(){
   }
 }
 
+function restart(){
+  window.location.reload();
+  return false;
+}
