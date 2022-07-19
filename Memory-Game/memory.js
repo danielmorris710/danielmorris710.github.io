@@ -36,7 +36,7 @@ function flipCards() {
   checkCardMatch()
 }
 
-// check if the cards match if not flip them back 
+// check if the cards match if not flip them back add points for matches get final score
 function checkCardMatch() {
   
   let isMatch = firstCard.dataset.framework === secondCard.dataset.framework
@@ -74,7 +74,7 @@ function disableCards() {
   resetCards()
 }
 
-// flip cards back if they don't match
+// flip cards back if they don't match and take turns for non matches
 function unflipCards() {
   gameTable = true
 
@@ -107,18 +107,11 @@ function resetCards() {
   [firstCard, secondCard] = [null, null]
 }
 
+
 cards.forEach(card => card.addEventListener('click', flipCards))
 
-// make two players take turns 
-function takeTurns(){
-  let counter = 0 
-  let playerOneScore = 0
-  let playerTwoScore = 0
-  if(counter % 2 === 1){
 
-  }
-}
-
+// restart game 
 function restart(){
   window.location.reload();
   return false;
